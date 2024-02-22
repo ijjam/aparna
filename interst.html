@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculating Simple Interest</title>
+</head>
+
+<body>
+
+    <script>
+        function calculateInterest(principal, rate, time) {
+            // Convert rate to decimal
+            rate = rate / 100;
+            
+            // Calculate simple interest
+            var simpleInterest = (principal * rate * time) / 100;
+
+            return simpleInterest;
+        }
+
+       
+        var principalAmount = 10000; 
+        var interestRate = 2; 
+        var investmentTime = 3; 
+        // Call the function and store the result
+        var result = calculateInterest(principalAmount, interestRate, investmentTime);
+
+        console.log("Simple Interest:", result);
+    </script>
+
+</body>
+
+</html>

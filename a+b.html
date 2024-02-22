@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expansion of (a + b)^2</title>
+</head>
+
+<body>
+
+    <script>
+        // Function to expand (a + b)^2 to a^2 + b^2 + 2ab
+        function expandSquare(a, b) {
+            var aSquared = Math.pow(a, 2);
+            var bSquared = Math.pow(b, 2);
+            var twoab = 2 * a * b;
+            
+            var result = aSquared + bSquared + twoab;
+            return result;
+        }
+
+        
+        var numberA = 3;
+        var numberB = 4;
+
+        // Call the function and store the result
+        var expansionResult = expandSquare(numberA, numberB);
+
+        
+        console.log("(a + b)^2 expanded to a^2 + b^2 + 2ab for", numberA, "and", numberB, "is:", expansionResult);
+    </script>
+
+</body>
+
+</html>
